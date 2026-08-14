@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dsh-profile-lock-proof": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-server.mjs"]
+    }
+  }
+}
