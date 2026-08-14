@@ -1,5 +1,10 @@
 # dsh-profile-lock-proof
 
+[![CI](https://github.com/dongsheng123132/dsh-profile-lock-proof/actions/workflows/ci.yml/badge.svg)](https://github.com/dongsheng123132/dsh-profile-lock-proof/actions/workflows/ci.yml)
+[![MIT 许可证](https://img.shields.io/github/license/dongsheng123132/dsh-profile-lock-proof)](LICENSE)
+[![Node.js 22+](https://img.shields.io/badge/Node.js-%E2%89%A522-339933?logo=nodedotjs&logoColor=white)](package.json)
+[![Awesome DSH Plugins](https://img.shields.io/badge/Awesome_DSH-%E5%B7%B2%E9%AA%8C%E8%AF%81%E5%AE%9E%E9%AA%8C-0969da)](https://github.com/dongsheng123132/awesome-dsh-plugins/blob/main/README.zh-CN.md#2origin-%E6%8F%92%E4%BB%B6%E5%AE%9E%E9%AA%8C%E5%AE%A4)
+
 这是一个面向 DeepSeek Harness profile 的只读供应链证据插件：它把 profile 依赖声明、`pnpm-lock.yaml` importer、实际安装包 `package.json` 与 `dsh.bundle.patch` 串成内容寻址闭环。
 
 它不是 SBOM、CVE 扫描、签名验证或安装器。它不联网、不执行被检包、不改 profile，也不返回清单、锁文件、patch、脚本命令或秘密正文。

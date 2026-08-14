@@ -1,5 +1,10 @@
 # dsh-profile-lock-proof
 
+[![CI](https://github.com/dongsheng123132/dsh-profile-lock-proof/actions/workflows/ci.yml/badge.svg)](https://github.com/dongsheng123132/dsh-profile-lock-proof/actions/workflows/ci.yml)
+[![MIT license](https://img.shields.io/github/license/dongsheng123132/dsh-profile-lock-proof)](LICENSE)
+[![Node.js 22+](https://img.shields.io/badge/Node.js-%E2%89%A522-339933?logo=nodedotjs&logoColor=white)](package.json)
+[![Awesome DSH Plugins](https://img.shields.io/badge/Awesome_DSH-verified_lab-0969da)](https://github.com/dongsheng123132/awesome-dsh-plugins#2origin-plugin-lab)
+
 `dsh-profile-lock-proof` produces a content-addressed, machine-readable proof that a DeepSeek Harness profile's dependency declaration, pnpm lock importer, installed package manifests, and each package's declared `dsh.bundle.patch` agree.
 
 It is deliberately narrower than an SBOM, CVE scanner, signature verifier, or installer. It does not execute packages, contact the network, mutate a profile, or return manifest, lockfile, patch, script-command, or secret contents.
