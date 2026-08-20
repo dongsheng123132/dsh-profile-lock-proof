@@ -1,5 +1,9 @@
 # dsh-profile-lock-proof
 
+v0.2.0 删除了会让 stock Cordis Loader 丢失 `inject` 元数据的 default export，也不再捆绑第二套 `@deepseek-ai/dsh-tools` 运行时。插件入口只暴露宿主中立的工具定义，并用真实 Web profile 回归安装与启动。
+
+MCP 面刻意降权：只接收有大小上限的内联证据，不读写文件；DSH/CLI 只有在显式、workspace 相对的 `artifactDir` 下才可原子写入报告，并做写后回读验证。
+
 [![CI](https://github.com/dongsheng123132/dsh-profile-lock-proof/actions/workflows/ci.yml/badge.svg)](https://github.com/dongsheng123132/dsh-profile-lock-proof/actions/workflows/ci.yml)
 [![MIT 许可证](https://img.shields.io/github/license/dongsheng123132/dsh-profile-lock-proof)](LICENSE)
 [![Node.js 22+](https://img.shields.io/badge/Node.js-%E2%89%A522-339933?logo=nodedotjs&logoColor=white)](package.json)

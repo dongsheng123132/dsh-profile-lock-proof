@@ -1,6 +1,6 @@
 {
   "name": "dsh-profile-lock-proof",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Verify a DSH profile's declared, locked and installed plugin closure without returning source contents.",
   "author": { "name": "2Origin", "url": "https://github.com/dongsheng123132" },
   "homepage": "https://github.com/dongsheng123132/dsh-profile-lock-proof#readme",

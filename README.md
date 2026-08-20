@@ -9,6 +9,8 @@
 
 It is deliberately narrower than an SBOM, CVE scanner, signature verifier, or installer. It does not execute packages, contact the network, mutate a profile, or return manifest, lockfile, patch, script-command, or secret contents.
 
+Version 0.2.0 removes the bundled DSH tool runtime and the default export that stock Cordis Loader misclassified. The bundle now exposes host-neutral tool definitions through its namespace export; local-path and fixed-commit installs are exercised against the real stock Web profile.
+
 ## Proof boundary
 
 - Input paths are workspace-relative regular files; traversal and symlinks are rejected.
@@ -33,6 +35,8 @@ Exit `0` means a verified proof, `2` means verification or input failure.
 - `dsh_profile_lock_verify`
 - MCP aliases: `profile_lock_inspect`, `profile_lock_verify`
 
+The MCP surface is deliberately lower privilege: it accepts bounded inline evidence only, never reads or writes files, and shares the validation core. DSH/CLI may write only to an explicit workspace-relative `artifactDir`, atomically and with read-back verification.
+
 Install into an isolated profile:
 
 ```bash
@@ -47,6 +51,7 @@ npm test
 npm run check
 npm run smoke:plugin
 npm run smoke:mcp
+npm run smoke:web-loader # requires DSH_CHECKOUT and isolated DSH_HOME
 ```
 
 MIT licensed. See [SECURITY.md](SECURITY.md) for the threat boundary.

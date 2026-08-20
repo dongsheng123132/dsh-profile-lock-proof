@@ -1,6 +1,6 @@
 {
   "name": "dsh-profile-lock-proof",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Content-addressed proof that a DeepSeek Harness profile declaration, pnpm lock and installed bundles agree",
   "license": "MIT",
   "type": "module",
@@ -9,11 +9,8 @@
   "bin": { "dsh-profile-lock-proof": "./bin/dsh-profile-lock-proof.mjs" },
   "files": [".codex-plugin/", ".mcp.json", "bin/", "cordis.patch.yml", "examples/", "index.js", "lib/", "mcp-server.mjs", "LICENSE", "README.md", "README.zh-CN.md", "SECURITY.md"],
   "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
-  "peerDependencies": { "@deepseek-ai/dsh-tools": "*" },
-  "peerDependenciesMeta": { "@deepseek-ai/dsh-tools": { "optional": true } },
   "dependencies": { "yaml": "2.8.1" },
-  "devDependencies": { "@deepseek-ai/dsh-tools": "0.0.1-rc.1" },
-  "scripts": { "test": "node --test test/*.test.mjs", "check": "node scripts/check.mjs", "smoke:plugin": "node test/plugin-smoke.mjs", "smoke:mcp": "node test/mcp-smoke.mjs", "smoke:dsh": "node test/dsh-runtime-smoke.mjs" },
+  "scripts": { "test": "node --test test/*.test.mjs", "check": "node scripts/check.mjs", "smoke:plugin": "node test/plugin-smoke.mjs", "smoke:mcp": "node test/mcp-smoke.mjs", "smoke:dsh": "node test/dsh-runtime-smoke.mjs", "smoke:web-loader": "node test/stock-web-loader-smoke.mjs" },
   "engines": { "node": ">=22" },
   "repository": { "type": "git", "url": "git+https://github.com/dongsheng123132/dsh-profile-lock-proof.git" },
   "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "supply-chain", "provenance", "lockfile", "evidence"]
