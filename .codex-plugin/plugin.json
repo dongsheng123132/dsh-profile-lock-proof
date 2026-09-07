@@ -1,12 +1,20 @@
 {
   "name": "dsh-profile-lock-proof",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Verify a DSH profile's declared, locked and installed plugin closure without returning source contents.",
-  "author": { "name": "2Origin", "url": "https://github.com/dongsheng123132" },
+  "author": {
+    "name": "2Origin",
+    "url": "https://github.com/dongsheng123132"
+  },
   "homepage": "https://github.com/dongsheng123132/dsh-profile-lock-proof#readme",
   "repository": "https://github.com/dongsheng123132/dsh-profile-lock-proof",
   "license": "MIT",
-  "keywords": ["deepseek-harness", "supply-chain", "provenance", "lockfile"],
+  "keywords": [
+    "deepseek-harness",
+    "supply-chain",
+    "provenance",
+    "lockfile"
+  ],
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "DSH Profile Lock Proof",
@@ -14,7 +22,12 @@
     "longDescription": "Verify a pinned DSH profile declaration, pnpm lock importer, installed package manifests and bundle patch hashes, then emit a content-addressed proof without returning source contents.",
     "developerName": "2Origin",
     "category": "Developer Tools",
-    "capabilities": ["Read", "Audit"],
-    "defaultPrompt": ["Verify this DSH profile lock proof and show any closure gaps."]
+    "capabilities": [
+      "Read",
+      "Audit"
+    ],
+    "defaultPrompt": [
+      "Verify this DSH profile lock proof and show any closure gaps."
+    ]
   }
 }
