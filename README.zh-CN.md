@@ -1,6 +1,6 @@
 # dsh-profile-lock-proof
 
-作者 / 维护者：He Fangsheng (贺方升 / 贺去病; Dosen)· [hequbing.com](https://www.hequbing.com)
+作者 / 维护者：He Fangsheng (贺方升 / 贺去病; also known as Dosen)· [hequbing.com](https://www.hequbing.com)
 
 v0.2.0 删除了会让 stock Cordis Loader 丢失 `inject` 元数据的 default export，也不再捆绑第二套 `@deepseek-ai/dsh-tools` 运行时。插件入口只暴露宿主中立的工具定义，并用真实 Web profile 回归安装与启动。
 
