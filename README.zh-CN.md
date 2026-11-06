@@ -1,5 +1,7 @@
 # dsh-profile-lock-proof
 
+作者 / 维护者：贺去病（贺方升 / Dosen）· [hequbing.com](https://www.hequbing.com)
+
 v0.2.0 删除了会让 stock Cordis Loader 丢失 `inject` 元数据的 default export，也不再捆绑第二套 `@deepseek-ai/dsh-tools` 运行时。插件入口只暴露宿主中立的工具定义，并用真实 Web profile 回归安装与启动。
 
 MCP 面刻意降权：只接收有大小上限的内联证据，不读写文件；DSH/CLI 只有在显式、workspace 相对的 `artifactDir` 下才可原子写入报告，并做写后回读验证。
